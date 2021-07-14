@@ -1,11 +1,11 @@
-# アカウント登録
+### アカウント登録
 一度登録すれば後は不要
 ```
  $ git config user.name "<user_name>"
  $ git config user.email "<user_email>"
 ```
 
-# 新規プロジェクトの作成
+### 新規プロジェクトの作成
 ```
  $ git init 
  $ git remote add origin https://.... # 発行されたURL
@@ -15,20 +15,22 @@
 
 ```
 
-# ブランチ
+### ブランチ
 ```
  $ git branch # 確認
  $ git checkout -b "<development>" # 作成
  $ git checkout master " チェックアウトのみ
+ $ git branch -D <name> ローカルブランチの削除
+ $ git push origin :<name> ローカルからUI上の反映
 ```
 
-# 状態確認とログ
+### 状態確認とログ
 ```
  $ git status 
  $ git log
 ```
 
-# コミットする
+### コミットする
 ただし、`development`としてコミットする。
 ```
  $ git add . 
@@ -36,13 +38,13 @@
  $ git push origin deveploment
 ```
 
-# masterで変更された内容の取得。
+### masterで変更された内容の取得。
 conflictに注意する。
 ```
  $ git pull origin master
 ```
 
-# 他アカウントのコード取得
+### 他アカウントのコード取得
 ```
  $ git clone https://....
 ```
